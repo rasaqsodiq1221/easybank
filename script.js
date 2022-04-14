@@ -15,5 +15,3 @@ function toggleNav() {
 }
 
 toggle.addEventListener("click", toggleNav, false);
-
-

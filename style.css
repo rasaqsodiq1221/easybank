@@ -11,6 +11,18 @@ a {
   color: hsl(233, 8%, 62%);
 }
 
+main > .image  {
+  background: url('/images/bg-intro-mobile.svg') no-repeat center center fixed;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+img {
+  max-width: 100%;
+}
+
 .fa {
   transition: 0.3s;
   font-size: 1.5rem;
@@ -25,6 +37,7 @@ a {
 header {
   position: fixed;
   width: 100%;
+  background: #fff;
 }
 
 nav {
@@ -34,13 +47,14 @@ nav {
   padding: 2em 0 ;
 }
 
-.nav_items {
+ .nav_items {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
   text-align: center;
+  background-color: white;
 }
 
 .nav_item {
@@ -73,8 +87,7 @@ nav {
     position: relative;
     align-items: center;
     justify-content: center;
-    flex-basis: 65%;
-    
+    flex-basis: 65%;  
     
   }
 
