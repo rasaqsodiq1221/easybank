@@ -9,13 +9,16 @@
 
 body {
   font-family: 'Public Sans', sans-serif;
-  font-size: 18px;
+  font-size: 13px;
   text-align: center;
   color: hsl(233, 8%, 62%);
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2.3rem;
 }
 
-h1 {
-  
+h1, h2 {
   font-weight: 500;
   color: hsl(233, 26%, 24%);
   
@@ -25,18 +28,6 @@ h1 {
 a {
   color: hsl(233, 8%, 62%);
 }
-/* 
-no-repeat center center fixed */
-
-/* main  {
-  background: url('/images/bg-intro-mobile.svg') no-repeat center center fixed ;
-  background-size: 100%  ;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-} */
-
-
 
 img {
   max-width: 100%;
@@ -101,6 +92,7 @@ main {
   background: url('/images/bg-intro-mobile.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  padding-bottom: 2em;
 }
 
 .introduction {
@@ -117,8 +109,37 @@ main {
   margin-bottom: 3rem;
 }
 
+/* about section */
 
+.about {
+  background-color: hsl(220, 16%, 96%);
+  padding-top: 4em;
+  padding-bottom: 4em;
+  
+}
 
+.about h2 {
+  font-size: 2rem;
+}
+
+.about_card {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
+}
+
+.about_section__paragraph {
+  padding-top: 2em;
+  padding-bottom: 4em;
+}
+
+.about_card h3 {
+  color: hsl(233, 26%, 24%);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
 
 
 
@@ -130,6 +151,11 @@ main {
 
 
 @media (min-width:800px) {
+
+  body {
+    font-size: 18px;
+  }
+
   .container {
     width: 85%;
     max-width: 1440px;
@@ -199,7 +225,7 @@ main {
   .introduction_image {
     top: -40px;
     right: 0px;
-    object-fit: fit;
+    /* object-fit: fit; */
     position: absolute;
     
   }
@@ -207,6 +233,16 @@ main {
   #mobile_phone {
     object-position: 120px;
     max-width: 550px;    
+  }
+
+  /* about section */
+  .about {
+    text-align: left;
+  }
+
+  .about_card {
+    flex-direction: row;
+    column-gap: 2rem;
   }
 
 
