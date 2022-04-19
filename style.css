@@ -41,7 +41,7 @@ img {
 
 .container {
   width: 90%;
-  max-width: 832px;
+  max-width: 500px;
   margin: 0 auto;
 }
 
@@ -91,7 +91,9 @@ a.btn {
 main {
   background: url('/images/bg-intro-mobile.svg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position-y: -200px;
+  background-position-x: -200px;
   padding-bottom: 2em;
 }
 
@@ -131,6 +133,7 @@ main {
 .about_section__paragraph {
   padding-top: 2em;
   padding-bottom: 4em;
+  
 }
 
 .about_card h3 {
@@ -216,8 +219,8 @@ main {
 
   .introduction_content {
     text-align: left;
-    padding-top: 10em;
-    padding-bottom: 5em;
+    padding-top: 7em;
+    padding-bottom: 3em;
     max-width: 300px;
     
   }
@@ -225,7 +228,6 @@ main {
   .introduction_image {
     top: -40px;
     right: 0px;
-    /* object-fit: fit; */
     position: absolute;
     
   }
@@ -243,8 +245,17 @@ main {
   .about_card {
     flex-direction: row;
     column-gap: 2rem;
+    flex-wrap: wrap;
   }
 
+  .about_section__paragraph {
+    max-width: 50%;
+  }
+
+  .about_card > * {
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
 
   
 }
@@ -275,7 +286,7 @@ main {
   }
 
   .introduction_image {
-    top: -150px;
+    top: -70px;
   }
 
   #mobile_phone {
@@ -291,6 +302,10 @@ main {
     max-width: 450px;
   }
 
+  .introduction_image {
+    top: -150px;
+  }
+
   main {
     background-position: 700px -250px;
     
@@ -299,5 +314,11 @@ main {
   #mobile_phone {
     /* width: 700px; */
     max-width: 100%;
+  }
+
+  /* about section */
+  .about_card > * {
+    flex-grow: 1;
+    flex-basis: 20%;
   }
 }
