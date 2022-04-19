@@ -91,9 +91,9 @@ a.btn {
 main {
   background: url('/images/bg-intro-mobile.svg');
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: -200px;
-  background-position-x: -200px;
+  background-size: contain;
+  /* background-position-y: -60px; */
+  
   padding-bottom: 2em;
 }
 
@@ -124,7 +124,7 @@ main {
   font-size: 2rem;
 }
 
-.about_card {
+.about_card, .article_card {
   display: flex;
   flex-direction: column;
   row-gap: 4rem;
@@ -144,12 +144,50 @@ main {
   font-weight: 300;
 }
 
+/* article section */
+.article {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.article h2 {
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+.article_card {
+  text-align: left;
+}
+
+.article_card figure {
+  background-color: #fff;
+}
+
+.article_caption {
+  padding: 2em 2em 3em;
+}
+
+.article_caption h4 {
+  font-weight:600;
+  color: hsl(233, 26%, 24%);
+  font-size: 0.9rem;
+  margin: 0.8rem 0;
+}
+
+.article img {
+  
+}
 
 
 
 
 
 /* MEDIA QUERIES */
+@media (min-width:700px) {
+  main {
+    background-position-y: -60px;
+  }
+}
 
 
 
@@ -257,6 +295,25 @@ main {
     flex-basis: 40%;
   }
 
+  /* article section */
+
+  .article_card {
+    flex-direction: row;
+    column-gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .article_card > * {
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
+
+  .article_caption h4 {
+    font-size: 1.2rem;
+  }
+  
+
+
   
 }
 
@@ -318,6 +375,12 @@ main {
 
   /* about section */
   .about_card > * {
+    flex-grow: 1;
+    flex-basis: 20%;
+  }
+
+  /* article section */
+  .article_card > * {
     flex-grow: 1;
     flex-basis: 20%;
   }
