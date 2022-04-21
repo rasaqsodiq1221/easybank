@@ -70,6 +70,7 @@ nav {
   background-color: white;
 }
 
+
 .nav_item {
   padding: 1.2em 0;
 }
@@ -269,7 +270,13 @@ footer {
     flex: 1 0;
     text-align: right;
   }
-
+  
+  .nav_link:hover {
+    text-decoration: underline;
+    text-underline-offset: 27px;
+    text-decoration-color: hsl(136, 65%, 51%);
+    text-decoration-thickness: 5px;
+  }
  
 
 
